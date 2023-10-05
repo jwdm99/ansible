@@ -1,0 +1,6 @@
+plugin: azure.azcollection.azure_rm
+auth_source: auto
+plain_host_names : yes
+hostnames:
+  - JWM-VM-1
+  - default
