@@ -1,5 +1,5 @@
-- name: TestImage1
+- name: Create an image from a virtual machine
   azure_rm_image:
     resource_group: JWM-Terraform
-    name: TestImage1
+    name: myImage
     source: JWM-VM-1
