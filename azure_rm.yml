@@ -1,3 +1,11 @@
 plugin: azure.azcollection.azure_rm
 include_vm_resource_groups:
   - '*'
+auth_source: auto
+plain_host_names: yes
+keyed_groups:
+  - key: tags.Role
+    separator: ''
+leading_separator: false
+fail_on_template_errors: false
+default_host_filters: ["powerstate != \"running\""]
