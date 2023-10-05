@@ -1,0 +1,13 @@
+plugin: azure.azcollection.azure_rm
+include_vm_resource_groups:
+  - '*'
+include_vmss_resource_groups:
+- '*'
+
+- hosts: JWM-VM-1
+
+- name: Create an image from a virtual machine
+  azure_rm_image:
+    resource_group: JWM-Terraform
+    name: myImage
+    source: JWM-VM-1
